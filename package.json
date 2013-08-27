@@ -1,0 +1,31 @@
+{
+  "name": "opinion-lexicon",
+  "version": "0.0.1",
+  "author": {
+    "name": "Taeho Kim",
+    "email": "xissysnd@gmail.com"
+  },
+  "main": "index",
+  "dependencies": {
+    "coffee-script": "1.6.3"
+  },
+  "readmeFilename": "README.md",
+  "description": "A node.js module to judge a word whether it's positive or negative.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xissy/node-opinion-lexicon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xissy/node-opinion-lexicon/issues"
+  },
+  "devDependencies": {
+    "should": "1.2.2",
+    "mocha": "1.12.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script --globals lw --recursive ./test -t 10000"
+  }
+}
