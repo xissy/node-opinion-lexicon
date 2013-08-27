@@ -20,10 +20,10 @@ Via [npm](https://npmjs.org):
 ```
 
 ### Get the opinion from a word
-The `getOpinion` function returns `'positive'`, `'negative'` or `'neutral'`.
 ```javascript
-  var opinion = opinionLexicon.getOpinion('great');
-  // opinion == 'positive'
+  opinionLexicon.getOpinion('great');     // returns 'positive'
+  opinionLexicon.getOpinion('rubbish');   // returns 'negative'
+  opinionLexicon.getOpinion('anyway');    // returns 'neutral'
 ```
 
 ### Helper functions
