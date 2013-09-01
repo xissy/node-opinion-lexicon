@@ -3,6 +3,8 @@ negativeWords = require './negativeWords'
 
 
 getOpinion = (word) ->
+  word = word.toLowerCase()
+  
   if positiveWords.indexOf(word) >= 0
     return 'positive'
   else if negativeWords.indexOf(word) >= 0
